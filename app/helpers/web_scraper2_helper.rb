@@ -1,0 +1,2 @@
+module WebScraper2Helper
+end

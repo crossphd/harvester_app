@@ -1,0 +1,19 @@
+<div class='page-contents'>
+      <% @data.each do |key, news_group| %>
+      <section class='news-group <%= key.to_s.split("_").join("") %>'>
+        <div class='container-fluid'>
+        <div class='news-group-inner col-xs-10 col-xs-offset-1'>
+          <h2 class='news-group-name'><%= key.to_s.split('_').map!{|a| a.upcase!}.join(' ')%></h2>
+          <br/>
+          <% news_group.each do |article| %>
+            <%= link_to(article.link, class: 'article', target: '_blank') do %>
+              <p><%= article.headline %></p>
+            <% end %>
+          <% end %>
+        </div>
+        </div>
+      </section>  
+
+      <% end %>
+</div>
+

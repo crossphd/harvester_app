@@ -2,13 +2,37 @@
 <html>
 <head>
   <title>Harvester</title>
+  <meta name="viewport" content="initial-scale=1">
   <%= stylesheet_link_tag    'application', media: 'all', 'data-turbolinks-track' => true %>
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
+  <%= javascript_include_tag 'jquery.viewportchecker.min' %>
+  <link href='https://fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
   <%= csrf_meta_tags %>
 </head>
 <body>
+  <div class='container-fluid title-background'>
+  <div class='col-xs-10 col-xs-offset-1 title-background-inner'>
+    <div class='app-title'>
+      <h1>< harvester ></h1>
+      <p class='text-center'>scrape me and my friends</p>
+    </div>
+  </div>
+  </div>
+  <%= yield %>
 
-<%= yield %>
+    <div id="footer">
+      <div class="footer-comments">from your friendly neighborhood &nbsp;<%= link_to 'crossphd', "https://twitter.com/crossphd" %>
+    </div>
+      
+   <!--    <ul class="footer-social">
+        <li><a href="https://mobile.twitter.com/tantohyung"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.facebook.com/profile.php?id=100012764088443"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="https://plus.google.com/103690899611882314643/posts"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li><a href="https://github.com/tohyung85"><i class="fa fa-github" aria-hidden="true"></i></a></li>
+      </ul> -->
+      <br />
+      <p class="disclaimer">disclaimer: data on this page is scraped from above named websites, and thus owned by each site respectively</p>
+  </div>
 
 </body>
 </html>
