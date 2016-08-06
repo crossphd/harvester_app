@@ -2,15 +2,8 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  // color: white;
 }
-// .title-background {
-//   background: transparent;
-//   // background: url('background.jpeg');
-//   // background-repeat: repeat; 
-  
-     
-// }
+
 body{
   background: url('/assets/scraper1.jpg');
   // opacity: 50;
@@ -29,18 +22,6 @@ body{
 .app-title p {
   margin:0px;
 }
-
-// .straitstimes {
-//   background: transparent;
-// }
-
-// .bbcnews{
-//  // background: url('bbc.jpg'); 
-// }
-
-// .bloomberg{
-//  // background: url('bloomberg.jpg'); 
-// }
 
 .app-title h1 {
   font-family: "HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif;
@@ -75,12 +56,6 @@ body{
 }
 
 .news-group {
-  // background-repeat: repeat; 
-  // background-position: top center; 
-  // background-attachment: scroll; 
-  // background-size: cover; 
-  // background: transparent;
-  
   padding-top: 20px;
   padding-bottom: 20px;
 
