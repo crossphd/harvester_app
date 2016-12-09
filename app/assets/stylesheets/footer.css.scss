@@ -1,11 +1,11 @@
-$footer-height: 100px;
+$footer-height: 200px;
 $footer-height-mobile:200px;
 /* Set the fixed height of the footer here */
 
 #footer {
   height: $footer-height;
   background-color: rgba(36,32,33,0.9);
-  opacity: .5;
+  opacity: .8;
 
   padding: 10px 0px;
   font-weight: 300;
@@ -18,48 +18,10 @@ $footer-height-mobile:200px;
 }
 
 
-// #footer {
-//   background: url('background.jpeg');
-//   background-repeat: repeat; 
-//   background-position: bottom center; 
-//   background-attachment: scroll; 
-//   background-size: cover;    
-// }
-.footer-comments{
-  display: flex;
-  justify-content: center;
-  margin:0;
-  padding: 0;
+
+.brand {
   color: white;
 }
-
-#footer .footer-comments a {
-  color: yellow;
-}
-
-#footer .footer-comments a:hover {
-  color: orange;
-  text-decoration: none;
-}
-
-// .footer-social {
-//   display: flex;
-//   justify-content: center;
-//   margin:0;
-//   padding: 0;
-//   list-style: none;
-// }
-
-// .footer-social li {
-//   color: #616161;
-//   padding-left: 10px;
-//   padding-right: 10px;
-
-// }
-
-// #footer-social a {
-//   font-size: 16px;
-// }
 
 #footer a{
   color: white;

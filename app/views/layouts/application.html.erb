@@ -20,19 +20,38 @@
   </div>
   <%= yield %>
 
-    <div id="footer">
-      <div class="footer-comments">from your friendly neighborhood &nbsp;<%= link_to 'crossphd', "https://twitter.com/crossphd" %>
-    </div>
+  <div id="footer">
+  <div class="container">
+  
+      <div class="col-xs-12 col-sm-6 text-center brand">
+        Created by Christopher Ross
+        <br><br>
+        <%= link_to 'http://www.crossphd.com', :target => "_blank" do %>
+          <%= image_tag 'crossphd.jpg', class: 'social-button' %>
+        <% end %>
+        <%= mail_to "chris@crossphd.com" do %>
+          <span>chris@crossphd.com</span>
+        <% end %>
+      </div>
+      <div class="col-xs-12 col-sm-6 text-center brand">
+        Social
+        <br><br>
+        <%= link_to 'https://twitter.com/crossphd', :target => "_blank" do %>
+          <%= image_tag 'twitter2.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://github.com/CRossPhD', :target => "_blank" do %>
+          <%= image_tag 'github2.png', class: 'social-button' %>
+        <% end %>
+        <%= link_to 'https://medium.com/@crossphd', :target => "_blank" do %>
+          <%= image_tag 'medium2.png', class: 'social-button' %>
+        <% end %>
+      </div>
+
+  </div>
+  <br>
+  <p class="disclaimer">disclaimer: data on this page is scraped from above named websites, and thus owned by each site respectively</p>
+
       
-   <!--    <ul class="footer-social">
-        <li><a href="https://mobile.twitter.com/crossphd"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
-        <li><a href="https://www.facebook.com/ceross19"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
-        <li><a href="https://plus.google.com/u/0/108050656451567901593"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
-        <li><a href="https://github.com/CRossPhD"><i class="fa fa-github" aria-hidden="true"></i></a></li>
-      </ul> -->
-      
-      <br />
-      <p class="disclaimer">disclaimer: data on this page is scraped from above named websites, and thus owned by each site respectively</p>
   </div>
 
 </body>
